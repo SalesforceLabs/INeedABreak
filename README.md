@@ -1,4 +1,4 @@
-![ci status](https://github.com/CoreSEs/Salesforce-Out-Of-Office-Request/actions/workflows/sfdx.yml/badge.svg?branch=master)
+![ci status](https://github.com/SalesforceLabs/INeedABreak/actions/actions/workflows/sfdx.yml/badge.svg?branch=master)
 
 # SF Labs - Out of Office Requestor
 
