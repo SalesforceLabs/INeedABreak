@@ -1,0 +1,23 @@
+{
+  "packageDirectories": [
+    {
+      "path": "src",
+      "default": true,
+      "package": "Out Of Office Request",
+      "versionName": "ver 1.1",
+      "versionNumber": "1.1.0.NEXT"
+    }
+  ],
+  "namespace": "ooor",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "49.0",
+  "packageAliases": {
+    "Out Of Office Request": "0Ho4x000000PB9VCAW",
+    "Out Of Office Request@0.1.0-1": "04t4x000000AIjaAAG",
+    "Out Of Office Request@1.0.0-1": "04t4x000000AIjfAAG",
+    "Out Of Office Request@1.0.0-2": "04t4x000000AIjkAAG",
+    "Out Of Office Request@1.0.0-3": "04t4x000000AIkTAAW",
+    "Out Of Office Request@1.0.0-4": "04t4x000000AIkYAAW",
+    "Out Of Office Request@1.1.0-1": "04t4x000000AIkdAAG"
+  }
+}

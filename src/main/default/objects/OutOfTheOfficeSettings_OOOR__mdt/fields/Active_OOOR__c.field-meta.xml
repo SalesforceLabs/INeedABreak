@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_OOOR__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description
+  >This field is being read by the oooh Apex Class and the corresponding object will be considered if this is set to true. It will be ignored if false.
+Demen S. 27th Oct 2020.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText
+  >This checkbox defines if your object will be considered in the next oooh run or not.</inlineHelpText>
+    <label>Active?</label>
+    <type>Checkbox</type>
+</CustomField>

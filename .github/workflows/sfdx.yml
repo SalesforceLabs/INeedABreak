@@ -1,0 +1,27 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install sfdx-cli
+      - name: Authenticate DevHub Labs Developer Org
+        run: |
+          echo "${{ secrets.SALESFORCE_JWT_SECRET_KEY }}" > server.key
+          node_modules/sfdx-cli/bin/run force:auth:jwt:grant --clientid ${{ secrets.SALESFORCE_CONSUMER_KEY }} --jwtkeyfile server.key --username ${{ secrets.SALESFORCE_DEVHUB_USERNAME}} --setdefaultdevhubusername --setalias devhubldo
+      - name: Create Scratch Org
+        run: node_modules/sfdx-cli/bin/run force:org:create --targetdevhubusername devhubldo --setdefaultusername --definitionfile config/project-scratch-def.json --setalias ciorg --durationdays 1
+      - name: Deploy source
+        run: node_modules/sfdx-cli/bin/run force:source:push
+      - name: Assign Admin Permission Set to Default Scratch Org user
+        run: node_modules/sfdx-cli/bin/run force:user:permset:assign -n OutOfTheOfficeAdmin_OOOR
+      - name: Assign Create OOO On Behalf of Other User Permission Set to Default Scratch Org user
+        run: node_modules/sfdx-cli/bin/run force:user:permset:assign -n OutOfTheOfficeCreateOOOOnBehalfOfOthers_OOOR
+      - name: Run Apex test
+        run: node_modules/sfdx-cli/bin/run force:apex:test:run -n "OutOfTheOfficeBatchableOOORTEST" -c -r human -d ./tests/apex -w 20
+      - name: Delete Scratch Org
+        run: node_modules/sfdx-cli/bin/run force:org:delete --noprompt

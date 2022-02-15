@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>PersonTakingTimeOff_OOOR__c</columns>
+    <columns>BackupUser_OOOR__c</columns>
+    <columns>StartDate_OOOR__c</columns>
+    <columns>EndDate_OOOR__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Status_OOOR__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

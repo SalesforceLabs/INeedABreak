@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customMetadataTypeAccesses>
+        <enabled>true</enabled>
+        <name>OutOfTheOfficeSettings_OOOR__mdt</name>
+    </customMetadataTypeAccesses>
+    <description
+  >This Permission Set is going to assign CRED permission to users for out of the office records and give access to the OutOfTheOfficeSettings_OOOR__mdt object for admin settings.
+Demen S. 27th Oct 2020.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OutOfOfficeRequest_OOOR__c.BackupUser_OOOR__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OutOfOfficeRequest_OOOR__c.Comment_OOOR__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OutOfOfficeRequest_OOOR__c.PersonTakingTimeOff_OOOR__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Out_Of_The_Office_Admin_OOOR</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>OutOfOfficeRequest_OOOR__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>OutOfOfficeRequest_OOOR__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

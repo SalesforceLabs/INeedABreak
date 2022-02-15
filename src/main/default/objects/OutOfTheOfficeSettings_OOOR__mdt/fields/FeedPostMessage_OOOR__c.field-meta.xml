@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FeedPostMessage_OOOR__c</fullName>
+    <defaultValue
+  >&quot;This record has been re-assigned, as the original owner is OOO.&quot;</defaultValue>
+    <description
+  >This content of this field will be used to stamp the message on the re-assigned record.
+Demen S. 27th Oct. 2020.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText
+  >Please add your Post Message. Please note, Chatter is required for feed messages.</inlineHelpText>
+    <label>Feed Post Message</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordType_OOOR__c</fullName>
+    <description
+  >This field can be used to restrict the query to a certain record type.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Please enter your record type API Name here with no quotes.
+Example - Correct: Business_Case NOT Correct &apos;Business Case&apos;</inlineHelpText>
+    <label>Record Type API Name</label>
+    <length>80</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

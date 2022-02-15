@@ -1,0 +1,27 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+package.xml
+
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest
+**/__tests__/**
+
+# Added as part of OOO Project
+
+# excluding 
+src/main/default/applications
+src/main/default/layouts/Account*
+src/main/default/prompts
+src/main/default/appMenus/AppSwitcher.appMenu-meta.xml
+src/main/default/objects/Case/businessProcesses/Master.businessProcess-meta.xml
+src/main/default/objects/Case/listViews/AllOpenCases.listView-meta.xml
+src/main/default/objects/Case/recordTypes/Business_Case.recordType-meta.xml
+src/main/default/objects/Case/recordTypes/Product_Case.recordType-meta.xml
+src/main/default/objects/Task/listViews/OpenTasks.listView-meta.xml
+src/main/default/layouts/Case-Portal Case Layout.layout-meta.xml
+src/main/default/objects/Task/listViews/OpenTasks.listView-meta.xml

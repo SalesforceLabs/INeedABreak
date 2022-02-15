@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_OOOR__c</fullName>
+    <description>Provides users the ability to provide a short comment.
+Demen S. 27th Oct 2020.</description>
+    <externalId>false</externalId>
+    <inlineHelpText
+  >Please provide any valuable comment you want to share</inlineHelpText>
+    <label>Comment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

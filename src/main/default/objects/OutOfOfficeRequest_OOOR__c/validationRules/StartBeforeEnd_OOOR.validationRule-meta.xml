@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StartBeforeEnd_OOOR</fullName>
+    <active>true</active>
+    <description
+  >Not able to create an Out of Office Record where the Start Date is greater than the End Date.</description>
+    <errorConditionFormula
+  >EndDate_OOOR__c &lt;  StartDate_OOOR__c</errorConditionFormula>
+    <errorDisplayField>EndDate_OOOR__c</errorDisplayField>
+    <errorMessage
+  >No time travel allowed during time off! Start time must be before end time.</errorMessage>
+</ValidationRule>

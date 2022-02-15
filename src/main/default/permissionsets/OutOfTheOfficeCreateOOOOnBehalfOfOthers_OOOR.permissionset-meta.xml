@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>CanCreateOOO_recordOnBehalfOfOthers_OOOR</name>
+    </customPermissions>
+    <description
+  >This permission set is checking the custom permission and if it&apos;s true, the user is allowed to create OOO records on behalf of other users.
+Demen S. 5th Nov 2020</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Out_Of_The_Office_Create_OOO_On_Behalf_Of_Others_OOOR</label>
+</PermissionSet>

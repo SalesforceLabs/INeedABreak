@@ -1,0 +1,15 @@
+{
+  "FirstName": "Backup",
+  "LastName": "User",
+  "Alias": "buuse",
+  "TimeZoneSidKey": "Europe/Berlin",
+  "LocaleSidKey": "de_DE",
+  "EmailEncodingKey": "UTF-8",
+  "LanguageLocaleKey": "en_US",
+  "Country": "United States",
+  "UserPermissionsSupportUser": true,
+  "UserPreferencesLightningExperiencePreferred": true,
+  "profileName": "System Administrator",
+  "permsets": ["OutOfTheOfficeEndUser_OOOR"],
+  "generatePassword": true
+}

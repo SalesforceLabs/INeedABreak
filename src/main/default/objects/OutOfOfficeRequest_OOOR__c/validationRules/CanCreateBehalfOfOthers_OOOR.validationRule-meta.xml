@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CanCreateBehalfOfOthers_OOOR</fullName>
+    <active>true</active>
+    <description
+  >This validation rule only lets users with the CanCreateOOO custom permission create out of office requests on behalf of others.
+Demen S. 25th June 2021</description>
+    <errorConditionFormula
+  >$Profile.Name &lt;&gt; &quot;System Administrator&quot; &amp;&amp;
+  $Permission.CanCreateOOO_recordOnBehalfOfOthers_OOOR = False &amp;&amp;
+    OwnerId &lt;&gt; PersonTakingTimeOff_OOOR__c</errorConditionFormula>
+    <errorMessage
+  >You don&apos;t have the permissions to create a time off record on behalf of others</errorMessage>
+</ValidationRule>

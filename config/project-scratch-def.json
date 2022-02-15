@@ -1,0 +1,42 @@
+{
+  "orgName": "SFLabs_OOOHandler",
+  "edition": "Enterprise",
+  "language": "en_US",
+  "country": "US",
+  "hasSampleData": true,
+  "features": [
+    "API",
+    "AuthorApex",
+    "ContactsToMultipleAccounts",
+    "DebugApex",
+    "DeferSharingCalc",
+    "ForceComPlatform",
+    "LightningServiceConsole",
+    "MaxCustomLabels:10",
+    "ServiceCloud",
+    "ServiceUser",
+    "ChangeDataCapture",
+    "DefaultWorkflowUser",
+    "EventLogFile",
+    "ForceComPlatform",
+    "PlatformCache",
+    "ProcessBuilder",
+    "RecordTypes",
+    "Workflow"
+  ],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "languageSettings": {
+      "enableTranslationWorkbench": true
+    },
+    "caseSettings": {
+      "systemUserEmail": "support@OOOHandler.com"
+    },
+
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}
