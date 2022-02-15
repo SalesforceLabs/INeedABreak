@@ -34,7 +34,8 @@ ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
-# experimetnal
+# experimental
+.github/workflows/*
 experimental/
 src/main/default/appMenus/AppSwitcher.appMenu-meta.xml
 src/main/default/objects/Case/businessProcesses/Master.businessProcess-meta.xml
