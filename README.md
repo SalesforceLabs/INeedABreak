@@ -1,6 +1,6 @@
-![ci status](https://github.com/SalesforceLabs/INeedABreak/actions/actions/workflows/sfdx.yml/badge.svg?branch=master)
+![ci status](https://github.com/SalesforceLabs/INeedABreak/actions/workflows/sfdx.yml/badge.svg?branch=master)
 
-# SF Labs - Out of Office Requestor
+# SF Labs - I Need a Break
 
 ![AppExchange Logo](./img/Title_OutOfOfficeRequest.jpg "AppExchange Logo")
 
